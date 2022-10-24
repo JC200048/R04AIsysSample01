@@ -14,9 +14,9 @@ public class Sentiment {
 	public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException {
 		Sentiment1 message = getLanguage("Stepover Toehold With Facelock");
 		if (message != null) {
-			System.out.println("Positive:" + message.documents[0].confidenceScores.negative);
+			System.out.println("Negative:" + message.documents[0].confidenceScores.negative);
 			System.out.println("Neutal:" + message.documents[0].confidenceScores.neutral);
-			System.out.println("Negative:" + message.documents[0].confidenceScores.positive);
+			System.out.println("Positive:" + message.documents[0].confidenceScores.positive);
 		}
 	}
 
